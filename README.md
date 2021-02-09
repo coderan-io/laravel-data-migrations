@@ -9,7 +9,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 With Composer installed, you can then install the extension using the following commands:
 
 ```bash
-$ php composer.phar require jlorente/laravel-data-migrations
+$ php composer.phar require coderan/laravel-data-migrations
 ```
 
 or add 
@@ -17,7 +17,7 @@ or add
 ```json
 ...
     "require": {
-        "jlorente/laravel-data-migrations": "*"
+        "coderan/laravel-data-migrations": "*"
     }
 ```
 
@@ -33,7 +33,7 @@ return [
     //other stuff
     'providers' => [
         //other stuff
-        \Jlorente\DataMigrations\DataMigrationsServiceProvider::class,
+        \Coderan\DataMigrations\DataMigrationsServiceProvider::class,
     ];
 ];
 ```
@@ -73,6 +73,6 @@ php artisan migrate-data:rollback [--path=]
 The behavior of the migrations is the same as the regular migrations.
 
 ## License 
-Copyright &copy; 2018 José Lorente Martín <jose.lorente.martin@gmail.com>.
+Copyright &copy; 2021 José Lorente Martín <jose.lorente.martin@gmail.com>, Eran Machiels <dev@eranmachiels.nl>.
 
 Licensed under the MIT license. See LICENSE.txt for details.
