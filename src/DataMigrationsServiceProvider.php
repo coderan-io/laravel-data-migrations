@@ -9,7 +9,7 @@
 
 namespace Coderan\DataMigrations;
 
-use Illuminate\Contracts\Bus\Dispatcher;
+use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Migrations\Migrator;
 use Coderan\DataMigrations\Console\Commands\InstallCommand as MigrateInstallCommand;
