@@ -7,22 +7,19 @@
  * @version     1.0
  */
 
-namespace Jlorente\DataMigrations\Console\Traits;
+namespace Coderan\DataMigrations\Console\Traits;
 
 /**
  * DataMigrationCommandTrait trait.
- * 
+ *
  * @author José Lorente <jose.lorente.martin@gmail.com>
  */
 trait DataMigrationCommandTrait
 {
-
     /**
      * Get the path to the migration directory.
-     *
-     * @return string
      */
-    protected function getMigrationPath()
+    protected function getMigrationPath(): string
     {
         if (is_string($targetPath = $this->input->getOption('path'))) {
             return $this->laravel->basePath() . '/' . $targetPath;

@@ -7,16 +7,16 @@
  * @version     1.0
  */
 
-namespace Jlorente\DataMigrations\Repositories;
+namespace Coderan\DataMigrations\Repositories;
 
 use Illuminate\Database\Migrations\DatabaseMigrationRepository;
 
 /**
  * DatabaseDataMigrationRepository class.
- * 
+ *
  * @author José Lorente <jose.lorente.martin@gmail.com>
  */
 class DatabaseDataMigrationRepository extends DatabaseMigrationRepository
 {
-    
+
 }
