@@ -1,24 +1,28 @@
 {
-    "name": "jlorente/laravel-data-migrations",
+    "name": "coderan/laravel-data-migrations",
     "description": "An extension to allow you to separate data migrations from structure migrations",
     "license": "MIT",
     "authors": [{
-            "name": "Jose Lorente",
-            "email": "jose.lorente.martin@gmail.com"
-        }],
+        "name": "Jose Lorente",
+        "email": "jose.lorente.martin@gmail.com"
+    }, {
+        "name": "Eran Machiels",
+        "email": "dev@eranmachiels.nl"
+    }],
     "require": {
-        "php": ">=7.0.0",
-        "illuminate/support": ">=5.5"
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0",
+        "illuminate/database": "^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Jlorente\\DataMigrations\\": "src/"
+            "Coderan\\DataMigrations\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Jlorente\\DataMigrations\\DataMigrationsServiceProvider"
+                "Coderan\\DataMigrations\\DataMigrationsServiceProvider"
             ]
         }
     }

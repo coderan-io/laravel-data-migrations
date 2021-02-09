@@ -7,19 +7,18 @@
  * @version     1.0
  */
 
-namespace Jlorente\DataMigrations\Console\Commands;
+namespace Coderan\DataMigrations\Console\Commands;
 
 use Illuminate\Database\Console\Migrations\MigrateMakeCommand;
-use Jlorente\DataMigrations\Console\Traits\DataMigrationCommandTrait;
+use Coderan\DataMigrations\Console\Traits\DataMigrationCommandTrait;
 
 /**
  * MakeMigrateDataCommand class.
- * 
+ *
  * @author José Lorente <jose.lorente.martin@gmail.com>
  */
 class MakeMigrateDataCommand extends MigrateMakeCommand
 {
-
     use DataMigrationCommandTrait;
 
     protected $signature = 'make:data-migration {name : The name of the migration.}
