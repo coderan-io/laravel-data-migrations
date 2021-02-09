@@ -7,25 +7,22 @@
  * @version     1.0
  */
 
-namespace Jlorente\DataMigrations\Console\Commands;
+namespace Coderan\DataMigrations\Console\Commands;
 
 use Illuminate\Database\Console\Migrations\MigrateCommand;
-use Jlorente\DataMigrations\Console\Traits\DataMigrationCommandTrait;
+use Coderan\DataMigrations\Console\Traits\DataMigrationCommandTrait;
 
 /**
  * MigrateDataCommand class.
- * 
+ *
  * @author José Lorente <jose.lorente.martin@gmail.com>
  */
 class MigrateDataCommand extends MigrateCommand
 {
-
     use DataMigrationCommandTrait;
 
     /**
      * The name and signature of the console command.
-     *
-     * @var string
      */
     protected $signature = 'migrate-data {--database= : The database connection to use.}
                 {--force : Force the operation to run when in production}
@@ -37,17 +34,13 @@ class MigrateDataCommand extends MigrateCommand
 
     /**
      * The console command description.
-     *
-     * @var string
      */
     protected $description = 'Run the data migrations';
 
     /**
      * Prepare the migration database for running.
-     *
-     * @return void
      */
-    protected function prepareDatabase()
+    protected function prepareDatabase(): void
     {
         $this->migrator->setConnection($this->option('database'));
 
