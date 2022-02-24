@@ -9,7 +9,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 With Composer installed, you can then install the extension using the following commands:
 
 ```bash
-$ php composer.phar require coderan/laravel-data-migrations
+composer require coderan/laravel-data-migrations
 ```
 
 or add 
@@ -17,7 +17,7 @@ or add
 ```json
 ...
     "require": {
-        "coderan/laravel-data-migrations": "*"
+        "coderan/laravel-data-migrations": "^1.0"
     }
 ```
 
@@ -32,7 +32,6 @@ config/app.php
 return [
     //other stuff
     'providers' => [
-        //other stuff
         \Coderan\DataMigrations\DataMigrationsServiceProvider::class,
     ];
 ];
@@ -58,7 +57,7 @@ The available commands of the package are:
 ```shell
 php artisan make:data-migration [name] [--path=]
 ```
-The firts time you use it the data migrations table will be created.
+The first time you use it the data migrations table will be created.
 
 *Run migration command*
 ```shell
