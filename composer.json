@@ -1,5 +1,6 @@
 {
     "name": "coderan/laravel-data-migrations",
+    "version": "2.0.0",
     "description": "An extension to allow you to separate data migrations from structure migrations",
     "license": "MIT",
     "authors": [{
